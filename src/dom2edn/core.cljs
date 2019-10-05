@@ -3,8 +3,8 @@
 (def attributes (js/Function.
                  "element"
                  "  out = []
-                 for (var i = 0; i < element.attributes.length; i++) {
-                 var x = element.attributes[i]
+                 for (let i = 0; i < element.attributes.length; i++) {
+                 const x = element.attributes[i]
                  out.push([x.nodeName, x.nodeValue])
                  }
                  return out"))
